@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_title_page"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#391513">
+
+    <TextView
+        android:id="@+id/TeleTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="TeleOp"
+        android:textColor="#D69F0B"
+        android:textSize="50dp"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scaleBlocks"
+        android:layout_below="@id/TeleTime"
+        android:text="Blocks Placed On Scale"
+        android:textColor="#D69F0B"
+        android:gravity="center_vertical|center_horizontal"
+        android:paddingTop="15dp"
+        />
+    <Button
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/scaleMinus"
+        android:layout_below="@id/scaleBlocks"
+        android:background="#D69F0B"
+        android:text="+"
+        android:textSize="30dp"
+        android:textColor="#391513"
+
+        />
+
+    <TextView
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:id="@+id/scaleDisplay"
+        android:onClick="addone"
+        android:layout_below="@id/scaleBlocks"
+        android:layout_toRightOf="@id/scaleMinus"
+        android:background="#D69F0B"
+        android:textColor="#391513"
+        android:text="" />
+    <Button
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/scalePlus"
+        android:layout_below="@id/scaleBlocks"
+        android:text="-"
+        android:textColor="#391513"
+        android:background="#D69F0B"
+        android:textSize="30dp"
+        android:layout_toRightOf="@id/scaleDisplay" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="End Game"
+        android:onClick="navigateEndGame"
+        android:textAlignment="center"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:elevation="0dp"
+        android:id="@+id/NavigEnd"
+        android:textColor="#391513"
+        android:background="#D69F0B"
+        android:textSize="50dp"
+        android:layout_alignParentBottom="true"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_title_page"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#391513">
+
+    <TextView
+        android:id="@+id/AutoFun"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="Autonomous"
+        android:textColor="#D69F0B"
+        android:textSize="60dp"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/baseTitle"
+        android:text="Robot Crosses Auto-Line"
+        android:gravity="center_vertical|center_horizontal"
+        android:layout_below="@id/AutoFun"
+        android:textColor="#D69F0B"
+        android:paddingTop="15dp"
+        android:textSize="35dp"/>
+
+    <RadioGroup
+        android:id="@+id/autoChoice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/baseTitle"
+        android:gravity="center_horizontal|center_vertical">
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/crossTrue"
+            android:layout_below="@id/autoChoice"
+            android:text="Yes"
+            android:textColor="#D69F0B" />
+        <RadioButton
+            android:id="@+id/crossFalse"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/crossTrue"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:text="No"
+            android:textColor="#D69F0B" />
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/autoScale"
+        android:text="Robot Places Block in Scale"
+        android:layout_below="@id/autoChoice"
+        android:textColor="#D69F0B"
+        android:gravity="center_horizontal|center_vertical"
+        android:padding="10dp"
+        android:textSize="35dp"/>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scaleChoice"
+        android:layout_below="@id/autoScale">
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/scaleAutoTrue"
+            android:text="Yes"
+            android:textColor="#D69F0B"
+            android:layout_below="@id/autoScale" />
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/scaleAutoFalse"
+            android:text="No"
+            android:layout_below="@id/scaleAutoTrue"
+            android:textColor="#D69F0B" />
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/autoSwitch"
+        android:text="Robot Places Block in Switch"
+        android:layout_below="@id/scaleChoice"
+        android:textColor="#D69F0B"
+        android:gravity="center_horizontal|center_vertical"
+        android:padding="10dp"
+        android:textSize="35dp"/>
+
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/switchChoice"
+        android:layout_below="@id/autoSwitch">
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/switchAutoTrue"
+            android:text="Yes"
+            android:textColor="#D69F0B"
+            android:layout_below="@id/autoScale" />
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/switchAutoFalse"
+            android:text="No"
+            android:layout_below="@id/switchAutoTrue"
+            android:textColor="#D69F0B" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/NavigTele"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:background="#D69F0B"
+        android:elevation="0dp"
+        android:onClick="navigateTeleop"
+        android:text="To TeleOp"
+        android:textAlignment="center"
+        android:textColor="#391513"
+        android:textSize="50dp" />
+
+</RelativeLayout>
