@@ -6,4 +6,39 @@
     android:layout_height="match_parent"
     tools:context="com.example.music.powerupscouting.PostGame">
 
+
+    <RadioGroup
+        android:id="@+id/recieveCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cardPenalties">
+
+        <RadioButton
+            android:id="@+id/noCard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No Card"
+            android:textSize="25dp"
+            android:textColor="#D69F0B"/>
+
+        <RadioButton
+            android:id="@+id/yellowCard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/noCard"
+            android:text="Yellow card"
+            android:textSize="25dp"
+            android:textColor="#D69F0B"/>
+
+        <RadioButton
+            android:id="@+id/redCard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/yellowCard"
+            android:text="Red card"
+            android:textSize="25dp"
+            android:textColor="#D69F0B"/>
+    </RadioGroup>
+
+
 </android.support.constraint.ConstraintLayout>
