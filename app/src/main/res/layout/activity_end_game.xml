@@ -18,7 +18,7 @@
         android:textAlignment="center"/>
 
     <TextView
-        android:id="@id/platformPark"
+        android:id="@+id/platformPark"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Does the Robot Park on the Platform?"
@@ -27,9 +27,9 @@
         android:layout_centerHorizontal="true"
         android:textSize="20dp"
         android:layout_below="@id/EndofTheGame"
-        android:padding_top="5dp" />
+ />
 
-    
+
 
     <Button
         android:layout_width="match_parent"
