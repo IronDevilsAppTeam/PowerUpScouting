@@ -27,13 +27,9 @@
         android:layout_centerHorizontal="true"
         android:textSize="35dp"
         android:layout_below="@id/EndofTheGame"
-<<<<<<< HEAD
  />
 
 
-=======
-        android:layout_marginTop="5dp"/>
->>>>>>> dc37314180c3bc1d22cdfbe6d6cc1240a26d2517
 
     <Button
         android:layout_width="match_parent"
@@ -87,7 +83,7 @@
         android:layout_marginTop="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
-        android:text="Was there a yellow or red card played on the team?"
+        android:text="Did the Robot Recieve a Yellow or Red Card?"
         android:textSize="35dp"
         android:textColor="#D69F0B"/>
 
@@ -100,6 +96,15 @@
         android:layout_marginLeft="0dp"
         android:layout_marginStart="0dp"
         android:layout_marginTop="8dp" >
+
+        <RadioButton
+            android:id="@+id/noCard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="No Card"
+            android:textSize="25dp"
+            android:textColor="#D69F0B"/>
 
         <RadioButton
             android:id="@+id/yellowCard"
