@@ -18,7 +18,8 @@
         </activity>
         <activity android:name=".Autonomous" />
         <activity android:name=".Teleop" />
-        <activity android:name=".EndGame"></activity>
+        <activity android:name=".EndGame" />
+        <activity android:name=".PostGame"></activity>
     </application>
 
 </manifest>
