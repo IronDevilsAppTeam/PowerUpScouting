@@ -18,7 +18,7 @@
         android:textAlignment="center"/>
 
     <TextView
-        android:id="@+id/platformPark"
+        android:id="@+id/doesPark"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Does the Robot Park on the Platform?"
@@ -30,78 +30,51 @@
  />
 
 
-
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Submit"
-        android:textAlignment="center"
-        android:layout_gravity="center_vertical|center_horizontal"
-        android:elevation="0dp"
-        android:id="@+id/Submit"
-        android:textColor="#391513"
-        android:background="#D69F0B"
-        android:textSize="50dp"
-        android:layout_alignParentBottom="true"/>
-
     <RadioGroup
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_below="@+id/platformPark"
-        android:layout_marginLeft="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:id="@+id/radioGroup">
+        android:layout_below="@+id/doesPark"
+        android:id="@+id/platformPark">
 
         <RadioButton
+            android:id="@+id/yesPark"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
             android:text="Yes"
             android:textSize="25dp"
-            android:textColor="#D69F0B"/>
+            android:textColor="#D69F0B" />
 
         <RadioButton
-            android:id="@+id/radioButton"
+            android:id="@+id/noPark"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
             android:text="No"
             android:textSize="25dp"
-            android:textColor="#D69F0B"/>
+            android:textColor="#D69F0B"
+            android:layout_below="@id/yesPark"/>
     </RadioGroup>
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/cardPenalties"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_below="@+id/radioGroup"
-        android:layout_marginTop="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
+        android:layout_below="@+id/platformPark"
         android:text="Did the Robot Recieve a Yellow or Red Card?"
         android:textSize="35dp"
         android:textColor="#D69F0B"/>
 
     <RadioGroup
-        android:layout_width="300dp"
-        android:layout_height="100dp"
-        android:layout_alignLeft="@+id/radioGroup"
-        android:layout_alignStart="@+id/radioGroup"
-        android:layout_below="@+id/textView"
-        android:layout_marginLeft="0dp"
-        android:layout_marginStart="0dp"
-        android:layout_marginTop="8dp" >
+        android:id="@+id/recieveCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cardPenalties">
 
         <RadioButton
             android:id="@+id/noCard"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
             android:text="No Card"
             android:textSize="25dp"
             android:textColor="#D69F0B"/>
@@ -110,7 +83,7 @@
             android:id="@+id/yellowCard"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
+            android:layout_below="@id/noCard"
             android:text="Yellow card"
             android:textSize="25dp"
             android:textColor="#D69F0B"/>
@@ -119,10 +92,24 @@
             android:id="@+id/redCard"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
+            android:layout_below="@id/yellowCard"
             android:text="Red card"
             android:textSize="25dp"
             android:textColor="#D69F0B"/>
     </RadioGroup>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Post Game"
+        android:textAlignment="center"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:elevation="0dp"
+        android:id="@+id/Submit"
+        android:textColor="#391513"
+        android:background="#D69F0B"
+        android:textSize="50dp"
+        android:layout_alignParentBottom="true"
+        android:onClick="navigatePostGame"/>
 
 </RelativeLayout>
