@@ -1,16 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.music.powerupscouting.PostGame">
+    tools:context="com.example.music.powerupscouting.PostGame"
+    android:background="#391513">
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/postGame"
+        android:text="Post Game"
+        android:textColor="#D69F0B"
+        android:textSize="50dp"
+        android:gravity="center_horizontal|center_vertical"/>
+
+    <TextView
+        android:id="@+id/cardPenalties"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Did the Robot Recieve a Yellow or Red Card?"
+        android:textSize="35dp"
+        android:textColor="#D69F0B"
+        android:layout_below="@id/postGame"
+        android:paddingTop="5dp"/>
 
     <RadioGroup
         android:id="@+id/recieveCard"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cardPenalties">
 
         <RadioButton
             android:id="@+id/noCard"
@@ -39,5 +59,56 @@
             android:textColor="#D69F0B"/>
     </RadioGroup>
 
+    <TextView
+        android:id="@+id/endRank"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Does the alliance receive the end ranking point?"
+        android:textSize="35dp"
+        android:textColor="#D69F0B"
+        android:layout_below ="@id/recieveCard"/>
 
-</android.support.constraint.ConstraintLayout>
+    <RadioGroup
+        android:id="@+id/rankingPoint"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/endRank">
+
+        <RadioButton
+            android:id="@+id/endYes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Yes"
+            android:textSize="25dp"
+            android:textColor="#D69F0B"/>
+
+        <RadioButton
+            android:id="@+id/endNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No"
+            android:textSize="25dp"
+            android:textColor="#D69F0B"
+            android:layout_below="@id/rankingPoint"/>
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/comments"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Relevant Comments"
+        android:textColor="#D69F0B"
+        android:layout_below="@id/rankingPoint"
+        android:textSize="35dp"/>
+
+    <EditText
+        android:layout_width="500dp"
+        android:layout_height="210dp"
+        android:id="@+id/commentBox"
+        android:layout_below="@id/comments"
+        android:background="#ffffff"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="10dp"/>
+
+</RelativeLayout>

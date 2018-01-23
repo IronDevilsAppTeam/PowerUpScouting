@@ -24,8 +24,6 @@
         android:text="Does the Robot Park on the Platform?"
         android:textColor="#D69F0B"
         android:textAlignment="center"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
         android:layout_centerHorizontal="true"
         android:textSize="35dp"
         android:layout_below="@id/EndofTheGame"
@@ -33,10 +31,8 @@
 
 
     <RadioGroup
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_below="@id/doesPark"
         android:id="@+id/platformPark">
 
@@ -61,7 +57,7 @@
 
     <TextView
 
-        android:id="@+id/textViewclimb"
+        android:id="@+id/doesClimb"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Did the robot climb?"
@@ -71,18 +67,14 @@
 
     <RadioGroup
         android:id="@+id/climbAnswer"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_alignLeft="@+id/textViewclimb"
-        android:layout_alignStart="@+id/textViewclimb"
-        android:layout_below="@+id/textViewclimb"
-        android:layout_marginTop="8dp" >
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/doesClimb">
 
         <RadioButton
             android:id="@+id/climbYes"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
             android:text="Yes"
             android:textSize="25dp"
             android:textColor="#D69F0B"/>
@@ -91,51 +83,10 @@
             android:id="@+id/climbNo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
             android:text="No"
             android:textSize="25dp"
             android:textColor="#D69F0B"/>
     </RadioGroup>
-
-    <TextView
-        android:id="@+id/endRank"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/climbAnswer"
-        android:layout_alignStart="@+id/climbAnswer"
-        android:layout_below="@+id/climbAnswer"
-        android:layout_marginTop="8dp"
-        android:text="Does the alliance receive the end ranking point?"
-        android:textSize="35dp"
-        android:textColor="#D69F0B"/>
-
-    <RadioGroup
-        android:id="@+id/rankingPoint"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_alignStart="@+id/endRank"
-        android:layout_alignLeft="@+id/endRank"
-        android:layout_below="@+id/endRank"
-        android:layout_marginTop="8dp" >
-
-        <RadioButton
-            android:id="@+id/endYes"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Yes"
-            android:textSize="25dp"
-            android:textColor="#D69F0B"/>
-
-        <RadioButton
-            android:id="@+id/endNo"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="No"
-            android:textSize="25dp"
-            android:textColor="#D69F0B"/>
-    </RadioGroup>
-
-
 
     <Button
         android:layout_width="match_parent"
@@ -143,7 +94,6 @@
         android:text="Post Game"
         android:textAlignment="center"
         android:layout_gravity="center_vertical|center_horizontal"
-        android:elevation="0dp"
         android:id="@+id/Submit"
         android:textColor="#391513"
         android:background="#D69F0B"
