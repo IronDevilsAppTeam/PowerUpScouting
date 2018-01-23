@@ -10,8 +10,7 @@
     <RadioGroup
         android:id="@+id/recieveCard"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/cardPenalties">
+        android:layout_height="wrap_content">
 
         <RadioButton
             android:id="@+id/noCard"
