@@ -125,12 +125,45 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_gravity="center_vertical|center_horizontal"
-        android:background="#D69F0B"
+        android:background="@drawable/button_outline"
         android:elevation="0dp"
         android:onClick="navigateTeleop"
         android:text="To TeleOp"
         android:textAlignment="center"
-        android:textColor="#391513"
+        android:textColor="#D69F0B"
         android:textSize="50dp" />
+
+    <TextView
+        android:id="@+id/controlScale"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/switchChoice"
+        android:textAlignment="center"
+        android:text="Do they have control over the scale"
+        android:textSize="35dp"
+        android:textColor="#D69F0B"/>
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/controlScale"
+        >
+
+        <RadioButton
+            android:id="@+id/controlYes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Yes"
+            android:textColor="#D69F0B"/>
+
+        <RadioButton
+            android:id="@+id/controlNo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="No"
+            android:textColor="#D69F0B"/>
+
+
+    </RadioGroup>
 
 </RelativeLayout>

@@ -70,8 +70,8 @@
         android:layout_gravity="center_vertical|center_horizontal"
         android:elevation="0dp"
         android:id="@+id/NavigEnd"
-        android:textColor="#391513"
-        android:background="#D69F0B"
+        android:textColor="#D69F0B"
+        android:background="@drawable/button_outline"
         android:textSize="50dp"
         android:layout_alignParentBottom="true"/>
 
