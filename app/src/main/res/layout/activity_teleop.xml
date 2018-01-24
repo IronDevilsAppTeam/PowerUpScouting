@@ -21,45 +21,37 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/scaleBlocks"
+        android:id="@+id/recieveExchange"
         android:layout_below="@id/TeleTime"
-        android:text="Blocks Placed On Scale"
+        android:text="Does the Robot Recieve Cubes from the Exchange?"
         android:textColor="#D69F0B"
-        android:gravity="center_vertical|center_horizontal"
-        android:paddingTop="15dp"
-        />
-    <Button
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:id="@+id/scaleMinus"
-        android:layout_below="@id/scaleBlocks"
-        android:background="#D69F0B"
-        android:text="+"
-        android:textSize="30dp"
-        android:textColor="#391513"
-
+        android:textSize="35dp"
         />
 
-    <TextView
-        android:layout_width="120dp"
-        android:layout_height="40dp"
-        android:id="@+id/scaleDisplay"
-        android:onClick="addone"
-        android:layout_below="@id/scaleBlocks"
-        android:layout_toRightOf="@id/scaleMinus"
-        android:background="#D69F0B"
-        android:textColor="#391513"
-        android:text="" />
-    <Button
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:id="@+id/scalePlus"
-        android:layout_below="@id/scaleBlocks"
-        android:text="-"
-        android:textColor="#391513"
-        android:background="#D69F0B"
-        android:textSize="30dp"
-        android:layout_toRightOf="@id/scaleDisplay" />
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/exchangeChoice"
+        android:layout_below="@id/recieveExchange">
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/doesRecieve"
+            android:text="Yes"
+            android:textColor="#D69F0B"
+            android:textSize="25dp"/>
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/doesntRecieve"
+            android:layout_below="@id/doesRecieve"
+            android:text="No"
+            android:textColor="#D69F0B"
+            android:textSize="25dp"/>
+
+    </RadioGroup>
 
     <Button
         android:layout_width="match_parent"
