@@ -119,35 +119,21 @@
             android:textColor="#D69F0B" />
     </RadioGroup>
 
-    <Button
-        android:id="@+id/NavigTele"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_gravity="center_vertical|center_horizontal"
-        android:background="@drawable/button_outline"
-        android:elevation="0dp"
-        android:onClick="navigateTeleop"
-        android:text="To TeleOp"
-        android:textAlignment="center"
-        android:textColor="#D69F0B"
-        android:textSize="50dp" />
-
     <TextView
         android:id="@+id/controlScale"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/switchChoice"
         android:textAlignment="center"
-        android:text="Do they have control over the scale"
+        android:text="Does the Alliance Control The Scale at the End of Auto?"
         android:textSize="35dp"
         android:textColor="#D69F0B"/>
 
     <RadioGroup
+        android:id="@+id/autoScaleControl"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/controlScale"
-        >
+        android:layout_below="@+id/controlScale">
 
         <RadioButton
             android:id="@+id/controlYes"
@@ -161,9 +147,24 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="No"
-            android:textColor="#D69F0B"/>
+            android:textColor="#D69F0B"
+            android:layout_below="@id/controlYes"/>
 
 
     </RadioGroup>
+
+    <Button
+        android:id="@+id/NavigTele"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:background="@drawable/button_outline"
+        android:elevation="0dp"
+        android:onClick="navigateTeleop"
+        android:text="To TeleOp"
+        android:textAlignment="center"
+        android:textColor="#D69F0B"
+        android:textSize="50dp" />
 
 </RelativeLayout>
