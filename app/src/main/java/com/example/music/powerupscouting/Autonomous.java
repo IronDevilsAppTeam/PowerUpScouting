@@ -17,6 +17,9 @@ public class Autonomous extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_autonomous);
+
+        radLineCross = (RadioGroup) findViewById(R.id.autoLine);
+        
     }
     public void navigateTeleop (View v){
         Intent intent = new Intent(this,Teleop.class);

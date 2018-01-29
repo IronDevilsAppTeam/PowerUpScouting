@@ -15,6 +15,9 @@ public class TitlePage extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_title_page);
+
+        etTeamNumber = (EditText)findViewById(R.id.Team_Number);
+        etMatchNumber = (EditText)findViewById(R.id.Match_Number);
     }
     public void navigateMain (View v) {
         Intent intent = new Intent(this,Autonomous.class);
