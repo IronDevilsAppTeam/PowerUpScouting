@@ -8,8 +8,6 @@ import android.widget.Button;
 import android.widget.TextView;
 
 public class Teleop extends AppCompatActivity {
-    private Button btn;
-    private int numtest = +1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,7 +20,5 @@ public class Teleop extends AppCompatActivity {
         startActivity (intent);
     }
 
-
-    }
 
 }
