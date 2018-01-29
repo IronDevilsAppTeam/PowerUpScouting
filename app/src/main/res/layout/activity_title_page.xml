@@ -61,7 +61,7 @@
         android:textAlignment="center"/>
 
     <EditText
-        android:id="@+id/Team_Name"
+        android:id="@+id/Match_Number"
         android:layout_width="match_parent"
         android:layout_height="80dp"
         android:layout_alignParentLeft="true"
