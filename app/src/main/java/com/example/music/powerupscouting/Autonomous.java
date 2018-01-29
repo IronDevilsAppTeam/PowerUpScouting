@@ -4,8 +4,14 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.RadioGroup;
 
 public class Autonomous extends AppCompatActivity {
+
+    RadioGroup radLineCross;
+    RadioGroup radAutoScale;
+    RadioGroup radAutoSwitch;
+    RadioGroup radScaleControl;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
