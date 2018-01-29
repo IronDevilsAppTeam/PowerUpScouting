@@ -136,4 +136,38 @@
         android:layout_alignParentBottom="true"
         android:onClick="navigatePostGame"/>
 
+    <TextView
+        android:id="@+id/endRank"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Does the alliance receive the end ranking point?"
+        android:textSize="35dp"
+        android:textColor="#D69F0B"
+        android:layout_below ="@id/climbSupport"/>
+
+    <RadioGroup
+        android:id="@+id/rankingPoint"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/endRank">
+
+        <RadioButton
+            android:id="@+id/endYes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Yes"
+            android:textSize="25dp"
+            android:textColor="#D69F0B"/>
+
+        <RadioButton
+            android:id="@+id/endNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No"
+            android:textSize="25dp"
+            android:textColor="#D69F0B"
+            android:layout_below="@id/rankingPoint"/>
+    </RadioGroup>
+
+
 </RelativeLayout>
