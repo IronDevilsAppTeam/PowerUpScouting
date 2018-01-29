@@ -18,6 +18,11 @@ public class EndGame extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_end_game);
+
+        radPlatformPark = (RadioGroup) findViewById(R.id.platformPark);
+        radEndClimb = (RadioGroup) findViewById(R.id.climbAnswer);
+        radClimbSupport = (RadioGroup) findViewById(R.id.climbSupport);
+        radEndRank = (RadioGroup) findViewById(R.id.endRank);
     }
 
     public void navigatePostGame (View v){

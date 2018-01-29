@@ -19,7 +19,9 @@ public class Autonomous extends AppCompatActivity {
         setContentView(R.layout.activity_autonomous);
 
         radLineCross = (RadioGroup) findViewById(R.id.autoLine);
-        
+        radAutoScale = (RadioGroup) findViewById(R.id.scaleChoice);
+        radAutoSwitch = (RadioGroup) findViewById(R.id.switchChoice);
+        radScaleControl = (RadioGroup) findViewById(R.id.autoScaleControl);
     }
     public void navigateTeleop (View v){
         Intent intent = new Intent(this,Teleop.class);

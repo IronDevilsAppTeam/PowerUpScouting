@@ -15,6 +15,10 @@ public class PostGame extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_post_game);
+
+        radCardGiven = (RadioGroup) findViewById(R.id.recieveCard);
+        radMatchResults = (RadioGroup) findViewById(R.id.matchAnswers);
+        etRelevantComments = (EditText) findViewById(R.id.commentBox);
     }
 
 

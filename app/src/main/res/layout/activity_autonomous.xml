@@ -39,7 +39,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/crossTrue"
-            android:layout_below="@id/autoChoice"
+            android:layout_below="@id/autoLine"
             android:text="Yes"
             android:textColor="#D69F0B" />
         <RadioButton
@@ -57,7 +57,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/autoScale"
         android:text="Robot Places Block in Scale"
-        android:layout_below="@id/autoChoice"
+        android:layout_below="@id/autoLine"
         android:textColor="#D69F0B"
         android:gravity="center_horizontal|center_vertical"
         android:padding="10dp"
