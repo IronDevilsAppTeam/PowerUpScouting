@@ -16,6 +16,8 @@ public class Teleop extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_teleop);
+
+        radExchangeRecieve = (RadioGroup) findViewById(R.id.exchangeChoice);
     }
 
     public void navigateEndGame (View v){
