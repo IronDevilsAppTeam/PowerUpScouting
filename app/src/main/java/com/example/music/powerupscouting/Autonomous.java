@@ -24,6 +24,26 @@ public class Autonomous extends AppCompatActivity {
         radScaleControl = (RadioGroup) findViewById(R.id.autoScaleControl);
     }
     public void navigateTeleop (View v){
+        switch(radLineCross.getCheckedRadioButtonId()){
+            case R.id.crossTrue:
+                ((GlobalVariables) this.getApplication()).scoutedTeam.autoCross = true;
+                break;
+        }
+        switch (radAutoScale.getCheckedRadioButtonId()){
+            case R.id.scaleAutoTrue:
+                ((GlobalVariables) this.getApplication()).scoutedTeam.autoScaleBlock = true;
+                break;
+        }
+        switch (radAutoSwitch.getCheckedRadioButtonId()){
+            case R.id.switchAutoTrue:
+                ((GlobalVariables) this.getApplication()).scoutedTeam.autoSwitchBlock = true;
+                break;
+        }
+        switch (radScaleControl.getCheckedRadioButtonId()) {
+            case R.id.autoScaleControl:
+                ((GlobalVariables) this.getApplication()).scoutedTeam.scaleControl = true;
+                break;
+        }
         Intent intent = new Intent(this,Teleop.class);
         startActivity(intent);
     }

@@ -120,5 +120,17 @@
             android:textColor="#D69F0B"/>
     </RadioGroup>
 
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:textAlignment="center"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:id="@+id/saveData"
+        android:textColor="#D69F0B"
+        android:background="@drawable/button_outline"
+        android:textSize="50dp"
+        android:layout_alignParentBottom="true"
+        android:onClick="createFile"/>
 
 </RelativeLayout>

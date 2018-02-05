@@ -22,10 +22,32 @@ public class EndGame extends AppCompatActivity {
         radPlatformPark = (RadioGroup) findViewById(R.id.platformPark);
         radEndClimb = (RadioGroup) findViewById(R.id.climbAnswer);
         radClimbSupport = (RadioGroup) findViewById(R.id.climbSupport);
-        radEndRank = (RadioGroup) findViewById(R.id.endRank);
+        radEndRank = (RadioGroup) findViewById(R.id.rankingPoint);
     }
 
     public void navigatePostGame (View v){
+        switch (radPlatformPark.getCheckedRadioButtonId()) {
+            case R.id.doesPark:
+                ((GlobalVariables) this.getApplication()).scoutedTeam.platformPark = true;
+                break;
+        }
+        switch (radEndClimb.getCheckedRadioButtonId()) {
+            case R.id.climbAnswer:
+                ((GlobalVariables) this.getApplication()).scoutedTeam.endClimb = true;
+                break;
+        }
+        switch (radClimbSupport.getCheckedRadioButtonId()) {
+            case R.id.climbSupport:
+                ((GlobalVariables) this.getApplication()).scoutedTeam.climbSupport = true;
+                break;
+        }
+        switch (radEndRank.getCheckedRadioButtonId()) {
+            case R.id.rankingPoint:
+                ((GlobalVariables) this.getApplication()).scoutedTeam.endRank = true;
+                break;
+        }
+
+
         Intent intent = new Intent(this,PostGame.class);
         startActivity(intent);
     }

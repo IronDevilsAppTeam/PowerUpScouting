@@ -71,7 +71,7 @@
         android:layout_weight="1"
         android:gravity="center_vertical|center_horizontal"
         android:hint="Enter Match Number Here"
-        android:inputType="text"
+        android:inputType="number"
         android:textAlignment="center"
         android:textColor="#D69F0B"
         android:textColorHint="#D69F0B"

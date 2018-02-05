@@ -21,6 +21,11 @@ public class Teleop extends AppCompatActivity {
     }
 
     public void navigateEndGame (View v){
+        switch (radExchangeRecieve.getCheckedRadioButtonId()) {
+            case R.id.exchangeChoice:
+                ((GlobalVariables) this.getApplication()).scoutedTeam.exchangeReceive = true;
+                break;
+        }
         Intent intent = new Intent(this, EndGame.class);
         startActivity (intent);
     }
